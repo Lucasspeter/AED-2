@@ -1,8 +1,7 @@
 #  Crônicas do Espaço: Planejamento Algorítmico de Missões
 
 **Autor:** Lucas Simoes Peter  
-**Instituição:** Universidade Federal de Pelotas (UFPel) - Ciência da Computação  
-**Disciplina:** Estruturas de Dados Avançadas  
+
 
 Este repositório contém a Parte 1 do trabalho de desenvolvimento de um Sistema de Gerenciamento e Planejamento de Missões Espaciais, implementado em linguagem C. O sistema consome dados de uma API pública, estrutura as informações utilizando uma Tabela Hash e resolve um problema de otimização logística através de um algoritmo guloso.
 
