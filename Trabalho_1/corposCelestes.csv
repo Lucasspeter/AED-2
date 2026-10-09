@@ -1,0 +1,16 @@
+id,nome,custo,beneficio
+lune,Moon,384400,1737
+phobos,Phobos,9378,11.1
+deimos,Deimos,23459,6.2
+mars,Mars,227939200,3389.5
+jupiter,Jupiter,778340821,69911
+mercure,Mercury,57909050,2439.4
+saturne,Saturne,1426666422,58232
+venus,Venus,108208475,6051.8
+kerberos,Kerberos,57783,25
+neptune,Neptune,4498396441,24622
+uranus,Uranus,2870658186,25362
+vanth,Vanth,9000,434
+pluton,Pluto,5906440628,1188.3
+ceres,1Ceres,414010000,476.2,
+eris,136199Eris,10180122852,1163
