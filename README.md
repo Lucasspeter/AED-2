@@ -23,8 +23,9 @@ Este repositório contém a Parte 1 do trabalho de desenvolvimento de um Sistema
 ```bash
 # Exemplo de requisição via cURL no terminal
 curl -X GET "[https://api.le-systeme-solaire.net/rest/bodies/](https://api.le-systeme-solaire.net/rest/bodies/)" -o planetas.json
-*   **Estrutura dos Dados Obtidos:** A API retorna um JSON estruturado. Para a aplicação, foram filtrados e mapeados apenas os campos essenciais para a logística: `id` (identificador único), `englishName` (nome de exibição), `semimajorAxis` (distância orbital) e `meanRadius` (raio médio).
 ```
+*   **Estrutura dos Dados Obtidos:** A API retorna um JSON estruturado. Para a aplicação, foram filtrados e mapeados apenas os campos essenciais para a logística: `id` (identificador único), `englishName` (nome de exibição), `semimajorAxis` (distância orbital) e `meanRadius` (raio médio).
+
 ---
 
 ##  2. Modelagem
