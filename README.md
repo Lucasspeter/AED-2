@@ -1,8 +1,7 @@
 #  Crônicas do Espaço: Planejamento Algorítmico de Missões
 
 **Autor:** Lucas Simoes Peter  
-**Instituição:** Universidade Federal de Pelotas (UFPel) - Ciência da Computação  
-**Disciplina:** Estruturas de Dados Avançadas  
+
 
 Este repositório contém a Parte 1 do trabalho de desenvolvimento de um Sistema de Gerenciamento e Planejamento de Missões Espaciais, implementado em linguagem C. O sistema consome dados de uma API pública, estrutura as informações utilizando uma Tabela Hash e resolve um problema de otimização logística através de um algoritmo guloso.
 
@@ -24,8 +23,9 @@ Este repositório contém a Parte 1 do trabalho de desenvolvimento de um Sistema
 ```bash
 # Exemplo de requisição via cURL no terminal
 curl -X GET "[https://api.le-systeme-solaire.net/rest/bodies/](https://api.le-systeme-solaire.net/rest/bodies/)" -o planetas.json
-*   **Estrutura dos Dados Obtidos:** A API retorna um JSON estruturado. Para a aplicação, foram filtrados e mapeados apenas os campos essenciais para a logística: `id` (identificador único), `englishName` (nome de exibição), `semimajorAxis` (distância orbital) e `meanRadius` (raio médio).
 ```
+*   **Estrutura dos Dados Obtidos:** A API retorna um JSON estruturado. Para a aplicação, foram filtrados e mapeados apenas os campos essenciais para a logística: `id` (identificador único), `englishName` (nome de exibição), `semimajorAxis` (distância orbital) e `meanRadius` (raio médio).
+
 ---
 
 ##  2. Modelagem
