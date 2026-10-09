@@ -24,12 +24,12 @@ void executar_algoritmo_guloso(TabelaHash* th, double orcamento_maximo) {
     Candidato* candidatos = (Candidato*) malloc(th->tamanho * sizeof(Candidato));
     int idx = 0;
 
-    // 2. Varre a Tabela Hash e copia os dados para o vetor calculando a Razão (Guloso)
+    // 2. Varre a Tabela Hash e copia os dados para o vetor calculando a Razão 
     for (int i = 0; i < th->capacidade; i++) {
         No* atual = th->vetor[i];
         while (atual != NULL) {
             candidatos[idx].d = atual->dado;
-            candidatos[idx].razao = atual->dado.beneficio / atual->dado.custo; // Benefício por Custo
+            candidatos[idx].razao = atual->dado.beneficio / atual->dado.custo; // Benefício/Custo
             idx++;
             atual = atual->proximo;
         }
@@ -58,6 +58,6 @@ void executar_algoritmo_guloso(TabelaHash* th, double orcamento_maximo) {
     printf("Custo Final Consumido: %.2f\n", custo_atual);
     printf("Beneficio Total Obtido: %.2f\n", beneficio_total);
 
-    // 5. Libera a memória do vetor temporário
+    
     free(candidatos);
 }

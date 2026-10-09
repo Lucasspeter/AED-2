@@ -8,7 +8,7 @@ void carregar_dados_csv(TabelaHash* th, const char* corposCelestes) {
     
     if (arquivo == NULL) {
         printf("Erro: Nao foi possivel abrir o arquivo %s!\n", corposCelestes);
-        return; // Sai da função se der erro
+        return; 
     }
 
     char linha[256];
@@ -27,19 +27,19 @@ void carregar_dados_csv(TabelaHash* th, const char* corposCelestes) {
         char *distancia_str = strtok(NULL, ",");
         char *potencial_str = strtok(NULL, ",");
 
-        // Verifica se todas as colunas foram lidas corretamente para evitar falhas (Segmentation Fault)
+        // Verifica se todas as colunas foram lidas corretamente para evitar falhas 
         if (id != NULL && nome != NULL && distancia_str != NULL && potencial_str != NULL) {
             
-            // 1. Cria a variável do tipo Destino
+            // Cria a variável do tipo Destino
             Destino novo_destino;
             
-            // 2. Copia os textos para dentro da struct
+            // Copia os textos para dentro da struct
             strcpy(novo_destino.id, id);
             strcpy(novo_destino.nome, nome);
             novo_destino.custo = atof(distancia_str);
             novo_destino.beneficio = atof(potencial_str);
 
-            // 3. Insere na Tabela Hash (Usando a função que estaria no seu hash.c)
+            // Insere na Tabela Hash
             inserir(th, novo_destino); 
         }
     }

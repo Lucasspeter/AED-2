@@ -2,7 +2,7 @@
 #include <string.h>
 #include "consultas.h"
 
-// 6.2 Pesquisa (Percorre a tabela buscando pelo atributo 'nome')
+//Pesquisa (Percorre a tabela buscando pelo atributo 'nome')
 Destino* pesquisar_por_nome(TabelaHash* th, char* nome) {
     for (int i = 0; i < th->capacidade; i++) {
         No* atual = th->vetor[i];
@@ -16,7 +16,7 @@ Destino* pesquisar_por_nome(TabelaHash* th, char* nome) {
     return NULL;
 }
 
-// 6.3 Listagem e filtragem (Gera listagem baseada em um critério)
+// Listagem e filtragem (Gera listagem baseada em um critério)
 void listar_filtrados(TabelaHash* th, double min_beneficio) {
     printf("\n--- Filtragem: Destinos com Beneficio >= %.2f ---\n", min_beneficio);
     int encontrou = 0;
@@ -35,8 +35,8 @@ void listar_filtrados(TabelaHash* th, double min_beneficio) {
     if (!encontrou) printf("Nenhum destino atende ao criterio.\n");
 }
 
-// 6.4 Operacao Adicional (Justificativa: Missões espaciais precisam 
-// saber imediatamente o corpo celeste mais acessível e o mais custoso)
+//Operacao Adicional (Justificativa: Missões espaciais precisam saber imediatamente o corpo celeste mais acessível e o mais custoso)
+
 void relatorio_extremos(TabelaHash* th) {
     Destino* mais_barato = NULL;
     Destino* mais_caro = NULL;

@@ -19,7 +19,7 @@ typedef struct No {
     struct No* proximo;
 } No;
 
-// Estrutura da Tabela Hash com instrumentação
+// Estrutura da Tabela Hash
 typedef struct {
     No** vetor;
     int capacidade;
