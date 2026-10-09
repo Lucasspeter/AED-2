@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Estrutura do domínio (Missão Espacial)
+
 typedef struct {
     char id[50];
     char nome[50];
@@ -24,7 +24,7 @@ typedef struct {
     No** vetor;
     int capacidade;
     int tamanho;
-    int colisoes; // Instrumentação exigida
+    int colisoes;
 } TabelaHash;
 
 TabelaHash* criar_tabela(int capacidade);
